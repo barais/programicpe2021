@@ -321,13 +321,12 @@ var data = [
 					room: "Zoom 1",
 					events: [{
 						type: "Keynote",
-						title: "Resurrecting Laplace’s Demon: The Case for Deterministic Models",
+						title: "Software Performance Modelling in Spacetime",
 						speaker: {
-							homepage: "http://ptolemy.eecs.berkeley.edu/~eal/",
-							name: "Edward A. Lee"
+							homepage: "https://www.se.cs.uni-saarland.de/apel/",
+							name: "Sven Apel, Professor of Computer Science, Saarland University"
 						},
-						abstract: " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.\nIn this talk, I will argue that models plays different (complementary) roles in engineering and science, and that deterministic models have historically proved proved even more valuable in engineering than in science. Moreover, I will show that deterministic models for cyber-physical systems, which combine computation with physical dynamics, remain elusive. I will argue that the next big advance in engineering methods must include deterministic models for CPS, and I will show that such models are both possible and practical. ",
-
+						abstract: "Almost any practical software system today is configurable. A configurable software system provides a set of configuration options to adjust and optimize its functional and non-functional properties. In particular, a system's performance behavior often depends in intricate ways on individual configuration options as well as interactions among them. This complex behavior renders tasks such as identifying performance-critical options, deploying performance-optimal configurations, and pinning down reasons for performance regression challenging. Clearly, any practical performance modelling technique needs to take the dimension of configurability into account (space dimension). But this is only one side of the coin. Software systems evolve and so do their (configuration-dependent) performance behaviors (time dimension).		In this talk, I will review recent and ongoing work on modelling performance of configurable software systems. While early approaches concentrated on modelling performance across the configuration space, more recent approaches incorporate the evolution of the software system in question, effectively modelling the system's performance behavior in spacetime. Besides discussing the key ideas in this area, I will highlight challenges that arise from the interplay between configuration sampling and performance learning, the uncertainty that is inherent in performance measurement and behavior, and the interaction of workload-dependent and configuration-dependent behavior.",
 					}]
 				}
 			],
@@ -669,12 +668,12 @@ var data = [
 					room: "Zoom 1",
 					events: [{
 						type: "Keynote",
-						title: "Resurrecting Laplace’s Demon: The Case for Deterministic Models",
+						title: "Tackling performance bugs in web applications and cloud systems",
 						speaker: {
-							homepage: "http://ptolemy.eecs.berkeley.edu/~eal/",
-							name: "Edward A. Lee"
+							homepage: "https://computerscience.uchicago.edu/people/profile/shan-lu/",
+							name: "Shan Lu, Professor of Computer Science, University of Chicago"
 						},
-						abstract: " In 1814, Pierre-Simon Laplace published an argument for determinism in the universe, arguing that if someone (a demon) were to know the precise location and momentum of every atom in the universe, then their past and future values for any given time are completely determined and can be calculated from the laws of classical mechanics. This principle, of course, has been roundly invalidated by quantum mechanics, and yet the laws of classical mechanics continue to be extremely useful for prediction.\nIn this talk, I will argue that models plays different (complementary) roles in engineering and science, and that deterministic models have historically proved proved even more valuable in engineering than in science. Moreover, I will show that deterministic models for cyber-physical systems, which combine computation with physical dynamics, remain elusive. I will argue that the next big advance in engineering methods must include deterministic models for CPS, and I will show that such models are both possible and practical. ",
+						abstract: "Software developers face the stringent task of delivering new software features while keeping the software latency low. This task has become increasingly challenging as many software systems, including web applications and cloud applications, need to process ever-growing amount of user data and contain increasingly complicated configuration settings. This talk will discuss our effort in understanding and tackling performance problems caused by inefficient data-processing and mis-configurations. I will first discuss our empirical study about how inefficient data-processing has become the performance bottleneck of modern web applications, and then present program analysis, code refactoring, and IDE tools that we have built to automatically identify and fix thousands of inefficient data-processing in popular web applications, to help developers understand the data-processing cost behind web page elements, and to help them explore different performance-enhancing web-page designs. I will also discuss our effort in automatically identifying performance-sensitive configurations and automatically adjusting configuration settings using control theoretic techniques.",
 
 					}]
 				}
