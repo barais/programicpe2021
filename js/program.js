@@ -41,6 +41,8 @@ modelsApp.controller("ProgramController", function($scope, $window) {
       return typeof talkType !== "undefined" && hiddenModalsAndStars.indexOf(talkType) === -1
     };
 
+    
+
     ////// Preprocess data //////
 
     $scope.data = data;
@@ -202,8 +204,15 @@ modelsApp.controller("ProgramController", function($scope, $window) {
     };
 
     ///// Info on talk /////
-    $scope.getInfo = function(talk, date) {
+    $scope.getInfo = function(event, talk, date) {
+        y = event.pageY;
         $scope.selectedTalk = talk;
         $scope.selectedTalkDate = date;
     }
+});
+
+var y=0;
+
+$('#infoModal').on('show.bs.modal', function (e) {
+    $('#infoModal').css('top', y);
 });

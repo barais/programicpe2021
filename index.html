@@ -126,11 +126,10 @@
                                     <td ng-repeat="event in session.events" class="table-inner" ng-class="showColor(event)?event.type:''">
 
                                         <!-- Event -->
-                                        <div ng-show="!showFavorites || (showFavorites && event.selected)"  >
+                                        <div ng-show="!showFavorites || (showFavorites && event.selected)">
 
-
-                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
-                                            <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
+                                            <a class="foo" href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
+                                            <a class="foo" href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
                                             <span ng-if="!showModalAndStar(event.type)">{{event.title}}</span>
                                             <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="showModalAndStar(event.type)">
                                                 <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
@@ -150,7 +149,7 @@
                                             <div ng-repeat="talk in event.papers" ng-show="!showFavorites || (showFavorites && talk.selected)">
                                                 <hr ng-if="$index > 0"/>
 
-                                                <a href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo(talk, talk.icalStart)">{{talk.title}}</a>
+                                                <a class="foo"  href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,talk, talk.icalStart)">{{talk.title}}</a>
 
                                                 <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(talk, talk.icalStart)">
                                                     <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
