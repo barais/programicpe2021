@@ -178,3 +178,8 @@ hr {
 .Opening {
     background-color: rgba(41, 150, 180, 0.5);
 }
+
+.table-responsive {
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
