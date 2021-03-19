@@ -120,13 +120,13 @@ modelsApp.controller("ProgramController", function($scope, $window) {
     }
 
 
-    function createEvent(calendar, start, end, title, description, location) {
+    function createEvent(calendar, edate, start, end, title, description, location) {
         calendar.push("BEGIN:VEVENT");
-        calendar.push("DTSTART:" + start);
-        calendar.push("DTEND:" + end);
-        calendar.push("DTSTAMP:" + start);
+        calendar.push("DTSTART:" + toITCFormat(edate,start));
+        calendar.push("DTEND;TZID=Europe/Paris:" + toITCFormat(edate,end));
+        calendar.push("DTSTAMP;TZID=Europe/Paris:" + toITCFormat(edate,start));
         calendar.push("ORGANIZER;CN=icpe2021-gc@inria.fr:mailto:icpe2021-gc@inria.fr");
-        calendar.push("UID:" + start + "-"  + hash(title) + "@icpe2021.irisa.fr");
+        calendar.push("UID:" + toITCFormat(edate,end) + "-"  + hash(title) + "@icpe2021.irisa.fr");
         calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
         calendar.push("LOCATION:" + location);
         calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
@@ -152,12 +152,17 @@ modelsApp.controller("ProgramController", function($scope, $window) {
                                if (typeof event.papers === "undefined") {
 
                                    if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
-                                        createEvent(calendar, session.icalStart, session.icalEnd, event.title, event.title, session.room); // TODO : description
+                                        createEvent(calendar, session.date, session.start, session.end, event.title, event.title, session.room); // TODO : description
                                    }
                                } else {
                                    event.papers.forEach(function(talk, talkIndex) {
                                        if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
-                                           createEvent(calendar, talk.icalStart, talk.icalEnd, talk.title, talk.title, session.room); // TODO : description
+                                           if (talk.date == undefined || talk.start == undefined || talk.end == undefined ){
+                                            createEvent(calendar,  session.date, session.start, session.end, talk.title, talk.title, session.room); // TODO : description
+                                           }
+                                           else{
+                                            createEvent(calendar,  talk.date, talk.start, talk.end, talk.title, talk.title, session.room); // TODO : description
+                                        }
                                        }
                                    });
                                }
@@ -216,3 +221,26 @@ var y=0;
 $('#infoModal').on('show.bs.modal', function (e) {
     $('#infoModal').css('top', y);
 });
+
+
+function toITCFormat(date, time) {
+    var timeCont = [],
+        dateCont = [];
+
+    if (time.toLowerCase().indexOf('pm') != -1) {
+
+        timeCont = time.toLowerCase().replace('pm', 00).split(':'); //assuming from your question seconds is never mentioned but only hh:mm i.e. hours and minutes
+        timeCont[0] = (parseInt(timeCont[0]) + 12) % 24;
+    } else     if (time.toLowerCase().indexOf('am') != -1) {
+        timeCont = time.toLowerCase().replace('am', 00).split(':');
+    }else{
+        timeCont = (time.toLowerCase() +  '00').split(':');
+    }
+    dateCont = date.split('/');
+
+    return dateCont.join('') + 'T' + timeCont.join('');
+}
+
+
+//var x = toITCFormat('2014/09/04', '02:30PM');
+//console.log(x); // this will output ur .ics format

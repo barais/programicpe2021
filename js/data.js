@@ -1,5 +1,4 @@
-var data = [
-	{
+var data = [{
 		name: "Monday - April 19, 2021",
 		rooms: [{
 				name: "Zoom room 1"
@@ -28,9 +27,8 @@ var data = [
 				{
 					start: "14:00",
 					end: "17:00",
+					date: "2021/04/19",
 					rowSpan: 9,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
 					room: "Zoom 3",
 					events: [{
 						type: "Tutorial",
@@ -41,13 +39,13 @@ var data = [
 				{
 					rowSpan: 3,
 				},
-			
+
 			],
 			[],
 			[],
 			[],
 			[],
-			[ {
+			[{
 					start: "15:00",
 					rowSpan: 2
 				},
@@ -55,8 +53,7 @@ var data = [
 					start: "15:00",
 					end: "21:00",
 					rowSpan: 15,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/19",
 					room: "Zoom 1",
 					events: [{
 						type: "Workshop",
@@ -68,8 +65,7 @@ var data = [
 					start: "15:00",
 					end: "18:00",
 					rowSpan: 6,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/19",
 					room: "Zoom 2",
 					events: [{
 						type: "Workshop",
@@ -87,77 +83,76 @@ var data = [
 			[],
 			[],
 
-			[ {
-				start: "17:00",
-				rowSpan: 1
-			},
-			{
-				rowSpan: 1,
+			[{
+					start: "17:00",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
 
-			},
-			{
-				rowSpan: 1,
+				},
+				{
+					rowSpan: 1,
 
-			},
-				
-		],
-		[],
-		[],
-		[],
-		[],
-		[ {
-			start: "18:00",
-			rowSpan: 3
-		},
-		{
-			rowSpan: 3,
+				},
 
-		},
-		{
-			rowSpan: 3,
-		},
-		{
-			start: "18:00",
-			end: "21:00",
-			rowSpan: 3,
-			icalStart: "20161002T070000Z",
-			icalEnd: "20161002T083000Z",
-			room: "Zoom 4",
-			events: [{
-				type: "Tutorial",
-				title: "Tutorial 02",
-				organizers: []
-			}]
-		},
-			
-	],
-	[],
-	[],
-	[],
-	[],
-	[ {
-		start: "21:00",
-		rowSpan: 1
-	},
-	{
-		rowSpan: 1,
+			],
+			[],
+			[],
+			[],
+			[],
+			[{
+					start: "18:00",
+					rowSpan: 3
+				},
+				{
+					rowSpan: 3,
 
-	},
-	{
-		rowSpan: 1,
+				},
+				{
+					rowSpan: 3,
+				},
+				{
+					start: "18:00",
+					end: "21:00",
+					rowSpan: 3,
+					date: "2021/04/19",
+					room: "Zoom 4",
+					events: [{
+						type: "Tutorial",
+						title: "Tutorial 02",
+						organizers: []
+					}]
+				},
 
-	},
-	{
-		rowSpan: 1,
+			],
+			[],
+			[],
+			[],
+			[],
+			[{
+					start: "21:00",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
 
-	}
-		
-],
-[],
-[],
-[],
-[],
-	
+				},
+				{
+					rowSpan: 1,
+
+				},
+				{
+					rowSpan: 1,
+
+				}
+
+			],
+			[],
+			[],
+			[],
+			[],
+
 
 		]
 	},
@@ -195,8 +190,7 @@ var data = [
 					start: "11:00",
 					end: "16:00",
 					rowSpan: 5,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/20",
 					room: "Zoom 4",
 					events: [{
 						type: "Workshop",
@@ -209,7 +203,7 @@ var data = [
 			[],
 			[],
 			[],
-			[ {
+			[{
 					start: "16:00",
 					rowSpan: 4
 				},
@@ -217,8 +211,7 @@ var data = [
 					start: "16:00",
 					end: "21:00",
 					rowSpan: 6,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/20",
 					room: "Zoom 1",
 					events: [{
 						type: "Workshop",
@@ -230,8 +223,7 @@ var data = [
 					start: "16:00",
 					end: "21:00",
 					rowSpan: 6,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/20",
 					room: "Zoom 2",
 					events: [{
 						type: "Workshop",
@@ -243,8 +235,7 @@ var data = [
 					start: "16:00",
 					end: "20:00",
 					rowSpan: 4,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/20",
 					room: "Zoom 3",
 					events: [{
 						type: "Workshop",
@@ -262,44 +253,40 @@ var data = [
 			[],
 			[],
 
-	[ 
-		{
-		start: "20:00",
-		rowSpan: 1
-	},
-	,
-	{
-		rowSpan: 1,
+			[{
+					start: "20:00",
+					rowSpan: 1
+				}
 
-	}
-	,
-	{
-		rowSpan: 1,
 
-	}
-	,
-	{
-		rowSpan: 1,
 
-	}
-	
-		
-],
-[],
-[],
-[],
-[],
-[ 
-	{
-	start: "21:00",
-	rowSpan: 1
-},
-	
-],
-[],
-[],
-[],
-[],
+			],
+			[],
+			[],
+			[],
+			[],
+			[{
+					start: "21:00",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
+
+				},
+				{
+					rowSpan: 1,
+
+				},
+				{
+					rowSpan: 1,
+
+				}
+
+			],
+			[],
+			[],
+			[],
+			[],
 
 
 		]
@@ -318,8 +305,7 @@ var data = [
 					start: "16:00",
 					end: "16:30",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/21",
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
@@ -340,8 +326,7 @@ var data = [
 					start: "16:30",
 					end: "17:15",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/21",
 					room: "Zoom 1",
 					events: [{
 						type: "Keynote",
@@ -366,8 +351,7 @@ var data = [
 					start: "17:15",
 					end: "17:30",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/21",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -387,8 +371,7 @@ var data = [
 					start: "17:30",
 					end: "18:15",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/21",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
@@ -406,9 +389,6 @@ var data = [
 								],
 								title: "ConfProf: White-Box Performance Profiling of Configuration Options",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-
 							},
 							{
 								authors: [{
@@ -427,9 +407,6 @@ var data = [
 								],
 								title: "RENOIR: Accelerating Blockchain Validation using State Caching",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-
 							},
 							{
 								authors: [{
@@ -448,19 +425,14 @@ var data = [
 								],
 								title: "Context-tailored Workload Model Generation for Continuous Representative Load Testing",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
 
 							},
 							{
 								authors: [{
-										name: "David Daly",
-									},
-								],
+									name: "David Daly",
+								}, ],
 								title: "Creating a Virtuous Cycle in Performance Testing at MongoDB",
 								type: "REGULAR INDUSTRY",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
 
 							},
 							{
@@ -487,8 +459,6 @@ var data = [
 								],
 								title: "Context-tailored Workload Model Generation for Continuous Representative Load Testing",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
 
 							},
 
@@ -509,8 +479,7 @@ var data = [
 					start: "18:15",
 					end: "18:30",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/21",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -530,8 +499,7 @@ var data = [
 					start: "18:30",
 					end: "19:00",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/21",
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
@@ -552,106 +520,96 @@ var data = [
 					start: "19:00",
 					end: "19:30",
 					rowSpan: 2,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/21",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
 						title: "S2 - WIP/Vision session",
-						papers: [
+						papers: [{
+								authors: [{
+										name: "Norbert Schmitt",
+									},
+									{
+										name: "Richard Vobl",
+									},
+									{
+										name: "Andreas Brunnert",
+									},
+									{
+										name: "Samuel Kounev",
+									}
+								],
+								title: "Towards a Benchmark for Software Resource Efficiency",
+								type: "WiP+Vision",
+
+							},
 							{
-							authors: [{
-									name: "Norbert Schmitt",
-								},
-								{
-									name: "Richard Vobl",
-								},
-								{
-									name: "Andreas Brunnert",
-								},
-								{
-									name: "Samuel Kounev",
-								}
-							],
-							title: "Towards a Benchmark for Software Resource Efficiency",
-							type: "WiP+Vision",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
+								authors: [{
+										name: "Jim Cuijpers",
+									},
+									{
+										name: "Kelvin Elsendoorn",
+									},
+									{
+										name: "Ean-Dan Tjon-Joek-Tjien",
+									},
+									{
+										name: "Riccardo Iesari",
+									},
+									{
+										name: "Federico Casenove",
+									},
+									{
+										name: "Jesse Donkervliet",
+									},
+									{
+										name: "Alexandru Iosup",
+									}
+								],
+								title: "An Empirical Evaluation of Video Conferencing Systems Used in Industry, Academia, and Entertainment [Work-in-Progress]",
+								type: "WiP+Vision",
 
-						},
-						{
-							authors: [{
-									name: "Jim Cuijpers",
-								},
-								{
-									name: "Kelvin Elsendoorn",
-								},
-								{
-									name: "Ean-Dan Tjon-Joek-Tjien",
-								},
-								{
-									name: "Riccardo Iesari",
-								},
-								{
-									name: "Federico Casenove",
-								},
-								{
-									name: "Jesse Donkervliet",
-								},
-								{
-									name: "Alexandru Iosup",
-								}
-							],
-							title: "An Empirical Evaluation of Video Conferencing Systems Used in Industry, Academia, and Entertainment [Work-in-Progress]",
-							type: "WiP+Vision",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-
-						},
-						{
-							authors: [{
-									name: "Jörg Domaschka",
-								},
-								{
-									name: "Simon Eismann",
-								},
-								{
-									name: "Mark Leznik",
-								},
-								{
-									name: "Johannes Grohmann",
-								},								{
-									name: "Samuel Kounev",
-								},
-								{
-									name: "Daniel Seybold",
-								}
+							},
+							{
+								authors: [{
+										name: "Jörg Domaschka",
+									},
+									{
+										name: "Simon Eismann",
+									},
+									{
+										name: "Mark Leznik",
+									},
+									{
+										name: "Johannes Grohmann",
+									}, {
+										name: "Samuel Kounev",
+									},
+									{
+										name: "Daniel Seybold",
+									}
 
 
-							],
-							title: "Buzzy: Towards Realistic DBMS Benchmarking via Tailored, Representative, Synthetic Workloads",
-							type: "WiP+Vision",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
+								],
+								title: "Buzzy: Towards Realistic DBMS Benchmarking via Tailored, Representative, Synthetic Workloads",
+								type: "WiP+Vision",
 
-						},
-						{
-							authors: [{
-									name: "Felipe Canales",
-								},
-								{
-									name: "Geoffrey Hecht",
-								},
-								{
-									name: "Alexandre Bergel",
-								},
-							],
-							title: "Optimization of Java Virtual Machine Flags Using Feature Model and Genetic Algorithm",
-							type: "WiP+Vision",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
+							},
+							{
+								authors: [{
+										name: "Felipe Canales",
+									},
+									{
+										name: "Geoffrey Hecht",
+									},
+									{
+										name: "Alexandre Bergel",
+									},
+								],
+								title: "Optimization of Java Virtual Machine Flags Using Feature Model and Genetic Algorithm",
+								type: "WiP+Vision",
 
-						},
+							},
 						]
 					}]
 				}
@@ -661,16 +619,15 @@ var data = [
 			[],
 			[],
 			[{
-				start: "19:30",
-				rowSpan: 1
-			
-			}
-			,
-	{
-		rowSpan: 1,
+					start: "19:30",
+					rowSpan: 1
 
-	}
-		],
+				},
+				{
+					rowSpan: 1,
+
+				}
+			],
 			[],
 			[],
 			[],
@@ -694,8 +651,7 @@ var data = [
 					start: "16:00",
 					end: "16:45",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/22",
 					room: "Zoom 1",
 					events: [{
 						type: "Keynote",
@@ -721,8 +677,7 @@ var data = [
 					start: "16:45",
 					end: "17:00",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/22",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -742,14 +697,12 @@ var data = [
 					start: "17:00",
 					end: "17:45",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/22",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
 						title: "S3 - Modeling and Optimization",
-						papers: [
-							{
+						papers: [{
 								authors: [{
 										name: "Emilio Incerto",
 									},
@@ -762,9 +715,7 @@ var data = [
 								],
 								title: "Learning Queuing Networks via Linear Optimization",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -801,9 +752,7 @@ var data = [
 								],
 								title: "A Multivariate Characterization and Detection of Software Performance Antipatterns",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -815,9 +764,7 @@ var data = [
 								],
 								title: "Simulation of In-Memory Database Workload: Markov Chains versus Relative Invocation Frequency and Equal Probability - A Trade-off between Accuracy and Time",
 								type: "SHORT INDUSTRY",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -835,9 +782,7 @@ var data = [
 								],
 								title: "Prediction of the consolidation delay in blockchain-based applications",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -852,9 +797,7 @@ var data = [
 								],
 								title: "QN-based Modeling and Analysis of Software Performance Antipatterns for Cyber-Physical Systems",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 						],
 					}]
@@ -872,8 +815,7 @@ var data = [
 					start: "17:45",
 					end: "18:00",
 					rowSpan: 1,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/22",
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
@@ -894,8 +836,7 @@ var data = [
 					start: "18:00",
 					end: "18:15",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/22",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -915,8 +856,7 @@ var data = [
 					start: "18:15",
 					end: "19:00",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/22",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
@@ -931,8 +871,6 @@ var data = [
 								],
 								title: "SymFlex: Elastic, Persistent and Symbiotic SSD Caching in Virtualization Environments",
 								type: "REGULAR",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
 
 							},
 							{
@@ -951,9 +889,7 @@ var data = [
 								],
 								title: "LOOPS: A Holistic Control Approach for Resource Management in Cloud Computing",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -965,9 +901,7 @@ var data = [
 								],
 								title: "The Granularity Gap Problem: A Hurdle for Applying Approximate Memory to Complex Data Layout",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -985,10 +919,8 @@ var data = [
 								],
 								title: "Courier: Real-Time Optimal Batch Size Prediction for Latency SLOs in BigDL",
 								type: "REGULAR INDUSTRY",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
-							},{
+
+							}, {
 								authors: [{
 										name: "Nupur Sumeet",
 									},
@@ -998,9 +930,7 @@ var data = [
 								],
 								title: "HLS_PRINT: High Performance Logging Framework on FPGA",
 								type: "SHORT INDUSTRY",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 
 						],
@@ -1019,8 +949,7 @@ var data = [
 					start: "19:00",
 					end: "19:30",
 					rowSpan: 2,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/22",
 					room: "Zoom 1",
 					events: [{
 						type: "Poster",
@@ -1034,14 +963,14 @@ var data = [
 			[],
 			[],
 			[{
-				start: "19:30",
-				rowSpan: 1
-			}
-			,
-			{
-				rowSpan: 1,
-		
-			}],
+					start: "19:30",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
+
+				}
+			],
 			[],
 			[],
 			[],
@@ -1065,8 +994,7 @@ var data = [
 					start: "16:00",
 					end: "16:30",
 					rowSpan: 2,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/23",
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
@@ -1086,75 +1014,68 @@ var data = [
 					start: "16:30",
 					end: "17:00",
 					rowSpan: 2,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/23",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
 						title: "S5 - Service-based Systems",
 						papers: [{
-							authors: [{
-									name: "Axel Busch",
-								},
-								{
-									name: "Martin Kammerer",
-								},
-							],
-							title: "Network Performance Influences of Software-defined Networks on Micro-service Architectures",
-							type: "REGULAR INDUSTRY",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-						{
-							authors: [{
-									name: "Johannes Grohmann",
-								},
-								{
-									name: "Martin Straesser",
-								},
-								{
-									name: "Avi Chalbani",
-								},
-								{
-									name: "Simon Eismann",
-								},
-								{
-									name: "Yair Arian",
-								},
-								{
-									name: "Nikolas Herbst",
-								},
-								{
-									name: "Noam Peretz",
-								},
-								{
-									name: "Samuel Kounev",
-								}
-							],
-							title: "SuanMing: Explainable Prediction of Performance Degradations in Microservice Applications",
-							type: "REGULAR",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-						{
-							authors: [{
-									name: "Laura Carnevali",
-								},
-								{
-									name: "Riccardo Reali",
-								},
-								{
-									name: "Enrico Vicario",
-								}
-							],
-							title: "Compositional evaluation of stochastic workflows for response time analysis of composite web services",
-							type: "REGULAR",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
+								authors: [{
+										name: "Axel Busch",
+									},
+									{
+										name: "Martin Kammerer",
+									},
+								],
+								title: "Network Performance Influences of Software-defined Networks on Micro-service Architectures",
+								type: "REGULAR INDUSTRY",
+
+							},
+							{
+								authors: [{
+										name: "Johannes Grohmann",
+									},
+									{
+										name: "Martin Straesser",
+									},
+									{
+										name: "Avi Chalbani",
+									},
+									{
+										name: "Simon Eismann",
+									},
+									{
+										name: "Yair Arian",
+									},
+									{
+										name: "Nikolas Herbst",
+									},
+									{
+										name: "Noam Peretz",
+									},
+									{
+										name: "Samuel Kounev",
+									}
+								],
+								title: "SuanMing: Explainable Prediction of Performance Degradations in Microservice Applications",
+								type: "REGULAR",
+
+							},
+							{
+								authors: [{
+										name: "Laura Carnevali",
+									},
+									{
+										name: "Riccardo Reali",
+									},
+									{
+										name: "Enrico Vicario",
+									}
+								],
+								title: "Compositional evaluation of stochastic workflows for response time analysis of composite web services",
+								type: "REGULAR",
+
+							},
 						],
 					}]
 				}
@@ -1172,8 +1093,7 @@ var data = [
 					start: "17:00",
 					end: "17:15",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/23",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -1186,120 +1106,110 @@ var data = [
 			[],
 			[],
 			[{
-				start: "17:15",
-				rowSpan: 1
-			},
-			{
-				start: "17:15",
-				end: "18:00",
-				rowSpan: 3,
-				icalStart: "20161002T070000Z",
-				icalEnd: "20161002T083000Z",
-				room: "Zoom 1",
-				events: [{
-					type: "TalkSession",
-					title: "S6 - Benchmarking",
-					papers: [
-						{
-							authors: [{
-									name: "André Bauer",
-								},
-								{
-									name: "Marwin Züfle",
-								},
-								{
-									name: "Simon Eismann",
-								},
-								{
-									name: "Johannes Grohmann",
-								},
-								{
-									name: "Nikolas Herbst",
-								},
-								{
-									name: "Samuel Kounev",
-								}
+					start: "17:15",
+					rowSpan: 1
+				},
+				{
+					start: "17:15",
+					end: "18:00",
+					rowSpan: 3,
+					date: "2021/04/23",
+					room: "Zoom 1",
+					events: [{
+						type: "TalkSession",
+						title: "S6 - Benchmarking",
+						papers: [{
+								authors: [{
+										name: "André Bauer",
+									},
+									{
+										name: "Marwin Züfle",
+									},
+									{
+										name: "Simon Eismann",
+									},
+									{
+										name: "Johannes Grohmann",
+									},
+									{
+										name: "Nikolas Herbst",
+									},
+									{
+										name: "Samuel Kounev",
+									}
 
 
-							],
-							title: "Libra: A Benchmark for Time Series Forecasting Methods",
-							type: "REGULAR",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-						{
-							authors: [{
-									name: "Guenter Hesse",
-								},
-								{
-									name: "Christoph Matthies",
-								},
-								{
-									name: "Michael Perscheid",
-								},
-								{
-									name: "Matthias Uflacker",
-								},
-								{
-									name: "Hasso Plattner",
-								}
+								],
+								title: "Libra: A Benchmark for Time Series Forecasting Methods",
+								type: "REGULAR",
 
-							],
-							title: "ESPBench: The Enterprise Stream Processing Benchmark",
-							type: "REGULAR",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-						{
-							authors: [{
-									name: "Peter Samoaa",
-								},
-								{
-									name: "Philipp Leitner",
-								}
-														],
-							title: "An Exploratory Study of the Impact of Parameterization on JMH Measurement Results in Open-Source Projects",
-							type: "REGULAR",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-						{
-							authors: [{
-									name: "Norbert Schmitt",
-								},
-								{
-									name: "Klaus-Dieter Lange",
-								},
-								{
-									name: "Sanjay Sharma",
-								},
-								{
-									name: "Nishant Rawtani",
-								},
-								{
-									name: "Carl Ponder",
-								},
-								{
-									name: "Samuel Kounev",
-								}
-							],
-							title: "The SPECpowerNext Benchmark Suite, its Implementation and New Workloads from a Developer's Perspective",
-							type: "SHORT INDUSTRY",
-							icalStart: "20161002T070000Z",
-							icalEnd: "20161002T083000Z",
-						
-						},
-					],
-				}]
-			}
-		],
-		[],
-		[],
-		[],
-		[],
+							},
+							{
+								authors: [{
+										name: "Guenter Hesse",
+									},
+									{
+										name: "Christoph Matthies",
+									},
+									{
+										name: "Michael Perscheid",
+									},
+									{
+										name: "Matthias Uflacker",
+									},
+									{
+										name: "Hasso Plattner",
+									}
+
+								],
+								title: "ESPBench: The Enterprise Stream Processing Benchmark",
+								type: "REGULAR",
+
+							},
+							{
+								authors: [{
+										name: "Peter Samoaa",
+									},
+									{
+										name: "Philipp Leitner",
+									}
+								],
+								title: "An Exploratory Study of the Impact of Parameterization on JMH Measurement Results in Open-Source Projects",
+								type: "REGULAR",
+
+							},
+							{
+								authors: [{
+										name: "Norbert Schmitt",
+									},
+									{
+										name: "Klaus-Dieter Lange",
+									},
+									{
+										name: "Sanjay Sharma",
+									},
+									{
+										name: "Nishant Rawtani",
+									},
+									{
+										name: "Carl Ponder",
+									},
+									{
+										name: "Samuel Kounev",
+									}
+								],
+								title: "The SPECpowerNext Benchmark Suite, its Implementation and New Workloads from a Developer's Perspective",
+								type: "SHORT INDUSTRY",
+
+							},
+						],
+					}]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
 			[{
 					start: "18:00",
 					rowSpan: 1
@@ -1308,8 +1218,7 @@ var data = [
 					start: "18:00",
 					end: "18:15",
 					rowSpan: 1,
-					icalStart: "20161005T083000Z",
-					icalEnd: "20161005T090000Z",
+					date: "2021/04/23",
 					room: "Zoom 1 and Slack",
 					events: [{
 						type: "CoffeeBreak",
@@ -1329,14 +1238,12 @@ var data = [
 					start: "18:15",
 					end: "19:00",
 					rowSpan: 3,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/23",
 					room: "Zoom 1",
 					events: [{
 						type: "TalkSession",
 						title: "S7 - IoT, Embedded Systems, Cloud",
-						papers: [
-							{
+						papers: [{
 								authors: [{
 										name: "Thomas Prantl",
 									},
@@ -1366,7 +1273,7 @@ var data = [
 								type: "SHORT",
 								icalStart: "20161002T070000Z",
 								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -1392,9 +1299,7 @@ var data = [
 								],
 								title: "Performance Impact Analysis of Securing MQTT Using TLS",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -1409,9 +1314,7 @@ var data = [
 								],
 								title: "PieSlicer: Characterizing and Dynamically Cutting Cloud Inference Response Time",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -1426,9 +1329,7 @@ var data = [
 								],
 								title: "Statement-Level Timing Estimation for Embedded System Design Using Machine Learning Techniques",
 								type: "SHORT",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
+
 							},
 							{
 								authors: [{
@@ -1449,9 +1350,6 @@ var data = [
 								],
 								title: "A Framework for Developing DevOps Operation Automation in Clouds using Components-off-the-Shelf",
 								type: "REGULAR INDUSTRY",
-								icalStart: "20161002T070000Z",
-								icalEnd: "20161002T083000Z",
-							
 							},
 
 						],
@@ -1470,8 +1368,7 @@ var data = [
 					start: "19:00",
 					end: "19:30",
 					rowSpan: 2,
-					icalStart: "20161002T070000Z",
-					icalEnd: "20161002T083000Z",
+					date: "2021/04/23",
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
@@ -1485,14 +1382,14 @@ var data = [
 			[],
 			[],
 			[{
-				start: "19:30",
-				rowSpan: 1
-			}
-			,
-			{
-				rowSpan: 1,
-		
-			}],
+					start: "19:30",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
+
+				}
+			],
 			[],
 			[],
 			[],
