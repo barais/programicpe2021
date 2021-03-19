@@ -181,6 +181,9 @@ hr {
 }
 
 .table-responsive {
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden; 
+}
+.table-responsive>.table{
+    margin-bottom: 20;
 }

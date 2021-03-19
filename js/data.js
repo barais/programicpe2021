@@ -142,6 +142,14 @@ var data = [
 	{
 		rowSpan: 1,
 
+	},
+	{
+		rowSpan: 1,
+
+	},
+	{
+		rowSpan: 1,
+
 	}
 		
 ],
@@ -259,6 +267,22 @@ var data = [
 		start: "20:00",
 		rowSpan: 1
 	},
+	,
+	{
+		rowSpan: 1,
+
+	}
+	,
+	{
+		rowSpan: 1,
+
+	}
+	,
+	{
+		rowSpan: 1,
+
+	}
+	
 		
 ],
 [],
@@ -638,8 +662,15 @@ var data = [
 			[],
 			[{
 				start: "19:30",
-				rowSpan: 0
-			}],
+				rowSpan: 1
+			
+			}
+			,
+	{
+		rowSpan: 1,
+
+	}
+		],
 			[],
 			[],
 			[],
@@ -1004,7 +1035,12 @@ var data = [
 			[],
 			[{
 				start: "19:30",
-				rowSpan: 0
+				rowSpan: 1
+			}
+			,
+			{
+				rowSpan: 1,
+		
 			}],
 			[],
 			[],
@@ -1450,7 +1486,12 @@ var data = [
 			[],
 			[{
 				start: "19:30",
-				rowSpan: 0
+				rowSpan: 1
+			}
+			,
+			{
+				rowSpan: 1,
+		
 			}],
 			[],
 			[],
