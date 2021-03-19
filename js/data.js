@@ -257,9 +257,6 @@ var data = [{
 					start: "20:00",
 					rowSpan: 1
 				}
-
-
-
 			],
 			[],
 			[],
