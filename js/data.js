@@ -58,6 +58,8 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "LTB",
+						url: "http://ltb2021.eecs.yorku.ca/",
+						description: "The 9th International Workshop on Load Testing and Benchmarking of Software Systems (LTB 2021)"
 
 					}]
 				},
@@ -70,6 +72,8 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "WEPPE",
+						url: "https://esulabsolutions.godaddysites.com/sponsored-events",
+						description: "The 3rd Workshop on Education and Practice of Performance Engineering (WEPPE)"
 
 					}]
 				},
@@ -158,7 +162,7 @@ var data = [{
 	},
 
 	{
-		name: "Thuesday - April 20, 2021",
+		name: "Tuesday - April 20, 2021",
 		rooms: [{
 				name: "Zoom room 1"
 			},
@@ -195,7 +199,8 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "PECS",
-						organizers: []
+						url: "https://pecs-workshop.github.io/2021/",
+						description: "The 1st Workshop on Performance and Energy-efficiency in Concurrent Systems (PECS 2021)"
 					}]
 				},
 			],
@@ -216,6 +221,9 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "WOSP-C",
+						url: "https://wosp-c-21.github.io/",
+						description: "Workshop on Challenges in Performance Methods for Software Development WOSP-C 2020"
+
 
 					}]
 				},
@@ -228,6 +236,9 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "Hotcloudperf",
+						url: "https://hotcloudperf.spec.org/",
+						description: "The 4th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf-2021)"
+
 
 					}]
 				},
@@ -240,6 +251,9 @@ var data = [{
 					events: [{
 						type: "Workshop",
 						title: "Auto-DASP",
+						url: "http://calvados.di.unipi.it/auto-dasp-21/",
+						description: "The 4th International Workshop on Autonomic Solutions for Parallel and Distributed Data Stream Processing (Auto-DaSP 2021)"
+
 
 					}]
 				},

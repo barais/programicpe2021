@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ICPE 2021 Program (All times are intended as PM and expressed in CET)</title>
+    <title>ICPE 2021 Program (All times are intended as PM and expressed in CET: UTC+1)</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -24,8 +24,6 @@
             <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
             <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
         </div>
-
-
 
 
         <!-- Modal for more info on talk -->
@@ -90,7 +88,7 @@
                             <strong>Abstract:</strong> {{selectedTalk.abstract}}
                         </div>
                         <div ng-if="selectedTalk.description" class="abstract">
-                            <strong>description:</strong> {{selectedTalk.description}}
+                            <strong>Description:</strong> {{selectedTalk.description}}
                         </div>
 
 

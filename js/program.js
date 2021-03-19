@@ -122,9 +122,12 @@ modelsApp.controller("ProgramController", function($scope, $window) {
 
     function createEvent(calendar, edate, start, end, title, description, location) {
         calendar.push("BEGIN:VEVENT");
+//        calendar.push("DTSTART;TZID=Europe/Paris:" + toITCFormat(edate,start));
         calendar.push("DTSTART:" + toITCFormat(edate,start));
-        calendar.push("DTEND;TZID=Europe/Paris:" + toITCFormat(edate,end));
-        calendar.push("DTSTAMP;TZID=Europe/Paris:" + toITCFormat(edate,start));
+        calendar.push("DTEND:" + toITCFormat(edate,end));
+        calendar.push("DTSTAMP:" + toITCFormat(edate,start));
+//        calendar.push("DTEND;TZID=Europe/Paris:" + toITCFormat(edate,end));
+//        calendar.push("DTSTAMP;TZID=Europe/Paris:" + toITCFormat(edate,start));
         calendar.push("ORGANIZER;CN=icpe2021-gc@inria.fr:mailto:icpe2021-gc@inria.fr");
         calendar.push("UID:" + toITCFormat(edate,end) + "-"  + hash(title) + "@icpe2021.irisa.fr");
         calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
@@ -238,7 +241,7 @@ function toITCFormat(date, time) {
     }
     dateCont = date.split('/');
 
-    return dateCont.join('') + 'T' + timeCont.join('');
+    return dateCont.join('') + 'T' + (timeCont[0]-1) + timeCont[1]  +'Z';
 }
 
 
