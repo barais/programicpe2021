@@ -241,7 +241,7 @@ function toITCFormat(date, time) {
     }
     dateCont = date.split('/');
 
-    return dateCont.join('') + 'T' + (timeCont[0]-1) + timeCont[1]  +'Z';
+    return dateCont.join('') + 'T' + (timeCont[0]-2) + timeCont[1]  +'Z';
 }
 
 
