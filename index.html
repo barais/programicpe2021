@@ -88,7 +88,10 @@
                             <strong>Abstract:</strong> {{selectedTalk.abstract}}
                         </div>
                         <div ng-if="selectedTalk.description" class="abstract">
-                            <strong>Description:</strong> {{selectedTalk.description}}
+                            <div ng-bind-html="convertHtml(selectedTalk.description) | unsafe"></div>
+                        </div>
+                        <div ng-if="selectedTalk.program" class="abstract">
+                            <div ng-bind-html="convertHtmlprogram(selectedTalk.program) | unsafe"></div>
                         </div>
 
 
@@ -202,7 +205,7 @@
     </div>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/angular.min.js"></script>

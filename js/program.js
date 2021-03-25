@@ -1,6 +1,9 @@
+var converter = new showdown.Converter();
 var modelsApp = angular.module("models-app", []);
+modelsApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
 
 modelsApp.controller("ProgramController", function($scope, $window) {
+
 
     // Utils
     function parseTime(time) {
@@ -217,6 +220,15 @@ modelsApp.controller("ProgramController", function($scope, $window) {
         $scope.selectedTalk = talk;
         $scope.selectedTalkDate = date;
     }
+    $scope.convertHtml = function(desc) {
+
+        return converter.makeHtml('**Description**:' + desc);
+    }
+    $scope.convertHtmlprogram = function(desc) {
+
+        return converter.makeHtml('**Program**:' + desc);
+    }
+
 });
 
 var y=0;

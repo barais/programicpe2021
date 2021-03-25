@@ -3,6 +3,7 @@ var data = [{
 		rooms: [{
 				name: "Zoom room 1"
 			},
+			// foo
 			{
 				name: "Zoom room 2"
 			},
@@ -32,7 +33,8 @@ var data = [{
 					room: "Zoom 3",
 					events: [{
 						type: "Tutorial",
-						title: "Tutorial 01",
+						title: "Tutorial 01: Performance Modeling and Engineering for Microservices and Serverless Applications with the RADON Framework",
+						description: "Tutorial 01: Performance Modeling and Engineering for Microservices and Serverless Applications with the RADON Framework (Robert Cordingly and Wes Lloyd)",
 						organizers: []
 					}]
 				},
@@ -57,10 +59,21 @@ var data = [{
 					room: "Zoom 1",
 					events: [{
 						type: "Workshop",
-						title: "LTB",
+						title: "The 9th International Workshop on Load Testing and Benchmarking of Software Systems (LTB 2021)",
 						url: "http://ltb2021.eecs.yorku.ca/",
-						description: "The 9th International Workshop on Load Testing and Benchmarking of Software Systems (LTB 2021)"
-
+						program: `						
+- **15:00-15:10**: Introduction
+- **15:10-15:35**: Enabling Containerized, Parametric and Distributed Database Deployment and Benchmarking as a Service (*George Kousiouris, Dimosthenis Kyriazis*)
+- **15:35-16:00**: PIERES: A Playground for Network Interrupt Experiments on Real-Time Embedded Systems in the IOT (*Franz Bender, Jan Jonas Brune, Nick Lauritz Keutel, Ilja Behnke, and Lauritz Thamsen*)
+- **16:00-17:00**: **Keynote 1**: Tracking Performance of the Graal Compiler on Public Benchmarks (*Petr Tuma*)
+- **17:00-17:25**: How to Measure Scalability of Distributed Stream Processing Engines? (*Sören Henning, and Wilhelm Hasselbring*)
+- **17:25-17:50**: Performance Interference on Key-Value Stores in Multi-tenant Environments: When Block Size and Write Requests Matter (*Adriano Lange, Marcos Sunyé, Tiago Kepe*)
+- **17:50-18:15**: Performance as a Self-Service based on SLIs/SLOs with Keptn (*Andreas Grabner*)
+- **18:15-19:10**: Viability of Azure IoT Hub for Processing High Velocity Large Scale IoT Data (*Wajdi Halabi, Daniel Smith, Linh Ngo, Amy Apon, John Hill, Jason Anderson, and Brandon Posey*)
+- **19:10-19:35**: Concurrent User Modeling – An Alternative Approach to Classic Queuing Theory (*Xiaosong Lou*)
+- **19:35-20:00**: **Keynote 2**: Accelerated Life-testing Applied to Software Systems (*Kishor Trivedi*)
+- **20:00-20:55**: Conclusion
+						`
 					}]
 				},
 				{
@@ -71,9 +84,20 @@ var data = [{
 					room: "Zoom 2",
 					events: [{
 						type: "Workshop",
-						title: "WEPPE",
+						title: "The 3rd Workshop on Education and Practice of Performance Engineering (WEPPE)",
 						url: "https://esulabsolutions.godaddysites.com/sponsored-events",
-						description: "The 3rd Workshop on Education and Practice of Performance Engineering (WEPPE)"
+						program: `
+- **15:00-15:10**: Opening - Minding the Gap between Education and Practice
+- **15:10-15:25**: The role of analytical models in the engineering and science of computer systems (*Y.C Tay*) 
+- **15:25-15:40**: Performance monitoring guidelines (*Maria Calzarossa, Luisa Massari, and Daniele Tessera*)
+- **15:40-15:55**: Experience with Teaching Performance Measurement and Testing in a Course on Functional Testing (*Andre Bondi and Razieh Saremi*)
+- **15:55-16:10**: An Analysis of Distributed Systems Syllabi With a Focus on Performance-Related Topics (*Cristina Abad,  Alexandru Iosup,  Edwin Boza, and Eduardo Ortiz-Holguin*)
+- **16:10-16:25**: A New Course on Systems Benchmarking - For Scientists and Engineers (*Samuel Kounev*)
+- **16:25-16:40**: Performance Engineering and Database Development at MongoDB (*David Daly*)
+- **16:40-16:55**: Software Performance Engineering Education: What Topics Should be Covered? (*Connie U. Smith*)
+- **16:55-17:25**: Discussion Q/A 
+- **17:25-17:45**: Summary of Workshop
+`
 
 					}]
 				},
@@ -124,7 +148,8 @@ var data = [{
 					room: "Zoom 4",
 					events: [{
 						type: "Tutorial",
-						title: "Tutorial 02",
+						title: "Tutorial 02: Enhancing Observability of Serverless Computing with the Serverless Application Analytics Framework",
+						description: "Enhancing Observability of Serverless Computing with the Serverless Application Analytics Framework (Giuliano Casale)",
 						organizers: []
 					}]
 				},
@@ -178,8 +203,8 @@ var data = [{
 		],
 		sessionGroups: [
 			[{
-					start: "11:00",
-					rowSpan: 5
+					start: "14:00",
+					rowSpan: 2
 				},
 				{
 					rowSpan: 1,
@@ -188,19 +213,26 @@ var data = [{
 					rowSpan: 1,
 				},
 				{
-					rowSpan: 3,
+					rowSpan: 1,
 				},
 				{
-					start: "11:00",
+					start: "14:00",
 					end: "16:00",
-					rowSpan: 5,
+					rowSpan: 2,
 					date: "2021/04/20",
 					room: "Zoom 4",
 					events: [{
 						type: "Workshop",
-						title: "PECS",
+						title: "The 1st Workshop on Performance and Energy-efficiency in Concurrent Systems (PECS 2021)",
 						url: "https://pecs-workshop.github.io/2021/",
-						description: "The 1st Workshop on Performance and Energy-efficiency in Concurrent Systems (PECS 2021)"
+						program: `
+- **14:00-14:05**: Intro from GCs, PCs, and announcements
+- **14:05-14:50**: **Keynote 1**: Transactions in the Era of Non Volatile Memory and Heterogeneous Memory Architectures (*Paolo Romano*)
+- **14:50-15:50**: PECS-S1 – Power and Energy Management
+    - An Experimental Evaluation of Workload Driven DVFS (*Ranjan Hebbar and Aleksandar Milenković*)
+	- Investigating the Cause and Effect of an AMD Zen Energy Management Anomaly (*Christian von Elm, Thomas Ilsche, Robert Schöne, Mario Bielert and Markus Schmidl*)
+- **15:50-16:00**: Closing session
+`
 					}]
 				},
 			],
@@ -220,9 +252,22 @@ var data = [{
 					room: "Zoom 1",
 					events: [{
 						type: "Workshop",
-						title: "WOSP-C",
+						title: "Workshop on Challenges in Performance Methods for Software Development WOSP-C 2020",
 						url: "https://wosp-c-21.github.io/",
-						description: "Workshop on Challenges in Performance Methods for Software Development WOSP-C 2020"
+						program: `
+- **16:00-16:15**: Intro from Organizers
+- **16:15-17:15**: **Keynote 1**: Performance and safety challenges of the next generation railways (*Stefano Marrone*)
+- **17:15-17:30**: Break 
+- **17:30-18:30**: WOSPC-S1 – Multiple architectures and an experience report
+    - Towards extraction of message-based communication in mixed-technology architectures for performance model (*Snigdha Singh, Yves Richard Kirschner and Anne Koziolek*)
+	- Performance Modelling of Intelligent Transportation Systems: Experience Report (*Lorenzo Pagliari, Mirko D'Angelo, Mauro Caporuscio, Raffaela Mirandola and Catia Trubiani*)	
+- **18:30-19:00**: Break
+- **19:00-20:00**: **Keynote 2**: Performance modeling using ML (*Jean-Marc Jézéquel*)
+- **20:00-21:15**: WOSPC-S2 – Hot topics in performance
+    - Performance Models of Event-Driven Architectures (*Murray Woodside*)
+	- On Preventively Minimizing the Performance Impact of Black Swans (*Andre Bondi*)
+	- Performance Evaluation and Improvement of Real-Time Computer Vision Applications for Edge Computing Devices (*Julian Gutierrez, Nicolas Bohm Agostini and David Kaeli*)				
+						`
 
 
 					}]
@@ -235,11 +280,26 @@ var data = [{
 					room: "Zoom 2",
 					events: [{
 						type: "Workshop",
-						title: "Hotcloudperf",
+						title: "The 4th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf-2021)",
 						url: "https://hotcloudperf.spec.org/",
-						description: "The 4th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf-2021)"
-
-
+						program: `
+- **16:15-16:30**: Welcome to HotCloudPerf and announcements
+- **16:30-17:00**: **Keynote 1**: Container orchestration in geo-distributed fog computing platforms (*Guillaume Pierre*)
+- **17:00-17:30**: **Keynote 2**: TBA (*Marc Brooker*)
+- **17:30-17:40**: Break
+- **17:40-18:40**: HotCloudPerf-S1: Applications and Machine Learning
+    - An Empirical Evaluation of the Performance of Video Conferencing Systems (*Richard Bieringa, Abijith Radhakrishnan, Tavneet Singh, Sophie Vos, Jesse Donkervliet and Alexandru Iosup*)
+	- Performance and Cost Comparison of Cloud Services for Deep Learning Workload (*Dheeraj Chahal and Mayank Mishra*)
+	- Distributed Double Machine Learning with a Serverless Architecture (*Malte S. Kurz*)
+	- GradeML: Towards Holistic Performance Analysis for Machine Learning Workflows (*Tim Hegeman, Matthijs Jansen, Alexandru Iosup and Animesh Trivedi*)
+- **18:40-18:50**: Break
+- **18:50-19:35**: HotCloudPerf-S2: Performance in the Cloud
+    - Towards Independent Run-Time Cloud Monitoring (*Luuk Klaver, Thijs van der Knaap, Johan van der Geest, Edwin Harmsma, Bram van der Waaij and Paolo Pileggi*)
+	- 10 Years Later: Cloud Computing is Closing the Performance Gap (*Giulia Guidi, Marquita Ellis, Aydin Buluc, Katherine Yelick and David Culler*)
+	- Cloud Performance Variability Prediction (*Yuxuan Zhao, Dmitry Duplyakin, Robert Ricci and Alexandru Uta*)	
+- **19:35-19:45**: Break
+- **19:45-20:15**: Social Session with members of the SPEC RG Cloud group; open to all ICPE attendees. Bring your own drink/snacks!
+`
 					}]
 				},
 				{
@@ -250,9 +310,17 @@ var data = [{
 					room: "Zoom 3",
 					events: [{
 						type: "Workshop",
-						title: "Auto-DASP",
+						title: "The 4th International Workshop on Autonomic Solutions for Parallel and Distributed Data Stream Processing (Auto-DaSP 2021)",
 						url: "http://calvados.di.unipi.it/auto-dasp-21/",
-						description: "The 4th International Workshop on Autonomic Solutions for Parallel and Distributed Data Stream Processing (Auto-DaSP 2021)"
+						program: `: 
+- **16:00-16:10**: Introduction to the Auto-DaSP workshop by the chairs: 
+- **16:10-16:55**: **Keynote 1**: Motivations and Challenges for Stream Processing in Edge Computing (*Vincenzo Gulisano*): 
+- **17:10-17:30**: Elastic Pulsar Functions for Distributed Stream Processing (*Gabriele Russo Russo, Antonio Schiazza and Valeria Cardellini*): 
+- **17:35-17:50**: Break 
+- **17:50-18:10**: An online approach to determine correlation between data streams (*Devesh Kumar Lal and Ugrasen Suman*): 
+- **18:15-19:00**: **Keynote 2**: Towards Elastic and Sustainable Data Stream Processing on Edge Infrastructure (*Marcos Assuncao‬*)‬‬‬‬: 
+- **19:00-19:05**: Closing by the Chairs
+`
 
 
 					}]
