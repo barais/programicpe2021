@@ -34,8 +34,21 @@ var data = [{
 					events: [{
 						type: "Tutorial",
 						title: "Tutorial 01: Performance Modeling and Engineering for Microservices and Serverless Applications with the RADON Framework",
-						description: "Tutorial 01: Performance Modeling and Engineering for Microservices and Serverless Applications with the RADON Framework (Robert Cordingly and Wes Lloyd)",
-						organizers: []
+						description: `
+						
+**Title**: Performance Modeling and Engineering for Microservices and Serverless Applications with the RADON Framework
+
+**Tutorial Abstract**
+
+<p style="text-align:justify;"> This tutorial presents the performance engineering approach for microservices and serverless applications being developed as part of the RADON project (<a href="http://radon-h2020.eu">http://radon-h2020.eu</a>). First, we will introduce microservices and serverless FaaS applications, and performance engineering challenges in this context. The focus will then shift to how these applications can be modeled using TOSCA and how different performance specifications can be integrated into such models. After that, the tutorial will discuss how such models are utilized to determine optimal decomposition strategies of serverless functions. Once the application gets deployed, following the DevOps practice, it is necessary to generate and maintain performance test cases for continuous integration and deployment. Finally, the tutorial focuses on giving theoretical baselines of resource management problems that arise in this area.
+</p>
+
+**Presenter Contact information**
+
+**A. Alnafessah 1, G. Casale** 1, **T. F. Düllmann** 2, **A. U. Gias 1**, **A. van Hoorn 2**, **M. Wurster 2**, **L. Zhu 1**
+- *1. Imperial College London, UK*
+- *2. University of Stuttgart, Germany*`,
+url: "https://icpe2021.spec.org/program/tutorials",
 					}]
 				},
 				{
@@ -79,7 +92,7 @@ var data = [{
 				{
 					start: "15:00",
 					end: "18:00",
-					rowSpan: 6,
+					rowSpan: 9,
 					date: "2021/04/19",
 					room: "Zoom 2",
 					events: [{
@@ -149,7 +162,26 @@ var data = [{
 					events: [{
 						type: "Tutorial",
 						title: "Tutorial 02: Enhancing Observability of Serverless Computing with the Serverless Application Analytics Framework",
-						description: "Enhancing Observability of Serverless Computing with the Serverless Application Analytics Framework (Giuliano Casale)",
+						url: "https://icpe2021.spec.org/program/tutorials",
+						description: `
+
+**Title**: Enhancing Observability of Serverless Computing with the Serverless Application Analytics Framework
+
+**Tutorial Abstract**
+
+<p style="text-align:justify;">This tutorial will introduce serverless software development with Function-as-a-Service (FaaS) platforms. These platforms automate many features of distributed software that are notoriously difficult to implement including high availability, fault tolerance, and automatic scaling while only billing for the actual runtime of functions in sub-second intervals. Additionally these platforms support agile software development by helping programmers enhance productivity by supporting rapid development and deployment of web services and microservices. We will provide an overview and feature comparison to describe the state-of-the-art of existing Function-as-a-Service serverless platforms including cloud based and open-source platforms and discuss current challenges and limitations. We will then introduce the Serverless Application Analytics Framework (SAAF), an analytics framework that supports profiling workload performance, resource utilization, and infrastructure to enable performance and cost characterizations of serverless software deployments. SAAF, and its set of supporting tools, has been designed to improve the observability of serverless software deployments to enable developers to better evaluate design trade-offs. SAAF provides tools to profile software deployments to AWS Lambda, Google Cloud Functions, IBM Cloud Functions, and Azure Functions written in Java, Python, Node.js/Javascript, and BASH.
+</p>
+
+**Presenter Contact information**
+
+- Robert Cordingly
+mailto:rcording@uw.edu
+*School of Engineering and Technology*
+*University of Washington Tacoma*
+
+- Wes J. Lloyd mailto:wlloyd@uw.edu
+School of Engineering and Technology
+University of Washington Tacoma`,
 						organizers: []
 					}]
 				},
