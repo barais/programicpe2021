@@ -930,7 +930,7 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
-						title: "SPEC RG presentation",
+						title: "SPEC & SPEC RG Presentation",
 					}]
 				}
 			],
@@ -1064,8 +1064,13 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Poster",
-						title: "Poster session",
-						organizers: []
+						title: "Poster and demo session",
+						organizers: [],
+						program: `
+- Bowen Li, Nat Shineman, Jayson Boubin and Christopher Stewart. **Comparison of Object Detectors for Fully Autonomous Aerial Systems Performance**. [*Poster*]
+- David Schmidt, Lisa Roderick, Joseph Kanjirakkattu and Chris Floyd. **Measuring Performance in the Virtualized Datacenter - SPECvirt Datacenter 2021**. [*Poster*]
+- Norbert Schmitt, Klaus-Dieter Lange, Sanjay Sharma, Aaron Cragin, David Reiner and Samuel Kounev. **SPEC — Spotlight on the International Standards Group (ISG)**. [*Poster*]						
+- Minh-Tri Nguyen and Hong-Linh Truong. **Monitoring Machine Learning Contracts with QoA4ML**. [Demo]`
 					}]
 				}
 			],
