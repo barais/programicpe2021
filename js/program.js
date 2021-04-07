@@ -4,7 +4,6 @@ modelsApp.filter('unsafe', function($sce) { return $sce.trustAsHtml; });
 
 modelsApp.controller("ProgramController", function($scope, $window) {
 
-
     // Utils
     function parseTime(time) {
         var splittedTime = time.split(":");
@@ -51,11 +50,14 @@ modelsApp.controller("ProgramController", function($scope, $window) {
     $scope.data = data;
 
     ////// Favorites /////
-
-    $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
+    if (typeof localStorage !== 'undefined'){
+        $scope.showFavorites = localStorage.getItem("showFavorites") === "true";
+    } else {
+        $scope.showFavorites = false
+    }
 
     // Retrieve favorite talks from local storage
-    if(typeof(Storage) !== "undefined") {
+    if(typeof(Storage) !== "undefined" && typeof localStorage !== 'undefined') {
         $scope.favoriteTalks = JSON.parse(localStorage.getItem("favoriteTalks"));
         if ($scope.favoriteTalks === null) {
             $scope.favoriteTalks = {};
@@ -83,14 +85,16 @@ modelsApp.controller("ProgramController", function($scope, $window) {
     });
 
     $scope.toggleFavorites = function() {
-        localStorage.setItem("showFavorites", $scope.showFavorites);
+        if (typeof localStorage !== 'undefined'){
+            localStorage.setItem("showFavorites", $scope.showFavorites);
+        }
     };
 
     $scope.toggleFavoriteTalk = function(talk, date) {
         talk.selected=!talk.selected;
         $scope.favoriteTalks[talk.title + date] = talk.selected;
 
-        if(typeof(Storage) !== "undefined") {
+        if(typeof(Storage) !== "undefined" && typeof localStorage !== 'undefined') {
             localStorage.setItem("favoriteTalks", JSON.stringify($scope.favoriteTalks));
         }
     };
