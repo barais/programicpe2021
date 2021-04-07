@@ -242,7 +242,7 @@ $('#infoModal').on('show.bs.modal', function (e) {
 });
 
 $('#infoModal').on('hide.bs.modal', function (e) {
-    y = 1
+//    y = 1
 });
 
 function toITCFormat(date, time) {
