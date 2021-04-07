@@ -5,24 +5,26 @@
     <title>ICPE 2021 Program (All times are intended as PM and expressed in CEST: UTC+2)</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/program.css" />
 </head>
 <body ng-app="models-app">
 
 <div ng-controller="ProgramController" ng-cloak>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
             <h2 class="title">All times are intended as PM and expressed in CEST: UTC+2</h2>
         </div>
 
-        <div class="row">
-            <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="glyphicon glyphicon-star"></span></label>
-            <button class="btn btn-default" ng-click="exportToCal(true)">Export <span class="glyphicon glyphicon-star"></span> to iCal</button>
-            <button class="btn btn-default" ng-click="exportToCal(false)">Export all to iCal</button>
+        <div class="">
+            <label class="checkbox-inline"><input type="checkbox" ng-model="showFavorites" ng-change="toggleFavorites()"> Show only <span class="fas fa-star"></span></label>
+            <button class="btn btn-outline-dark" ng-click="exportToCal(true)">Export <span class="fas fa-star"></span> to iCal</button>
+            <button class="btn btn-outline-dark" ng-click="exportToCal(false)">Export all to iCal</button>
         </div>
 
 
@@ -31,14 +33,12 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+
                         <h4 class="modal-title" id="myModalLabel">
                             <!-- Star -->
                             <button class="btn btn-link btn-sm" ng-click="toggleFavoriteTalk(selectedTalk, selectedTalkDate)">
-                                <span ng-if="selectedTalk.selected" class="glyphicon glyphicon-star"></span>
-                                <span ng-if="!selectedTalk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                <span ng-if="selectedTalk.selected" class="fas fa-star"></span>
+                                <span ng-if="!selectedTalk.selected" class="far fa-star"></span>
                             </button>
 
                             <!-- Title -->
@@ -46,6 +46,7 @@
                             <a ng-if="selectedTalk.url" ng-href="{{selectedTalk.url}}">{{selectedTalk.title}}</a>
                             <span ng-if="!selectedTalk.url">{{selectedTalk.title}}</span>
                         </h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
 
@@ -129,12 +130,12 @@
                                         <!-- Event -->
                                         <div ng-show="!showFavorites || (showFavorites && event.selected)">
 
-                                            <a class="foo" href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
-                                            <a class="foo" href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
+                                            <a class="foo" href="#" data-bs-toggle="modal" data-bs-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type !== 'Keynote' && showModalAndStar(event.type)">{{event.title}}</a>
+                                            <a class="foo" href="#" data-bs-toggle="modal" data-bs-target="#infoModal" ng-click="getInfo($event,event, session.icalStart)" ng-if="event.type === 'Keynote'">Keynote: {{event.speaker.name}}</a>
                                             <span ng-if="!showModalAndStar(event.type)">{{event.title}}</span>
                                             <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(event, session.icalStart)" ng-if="showModalAndStar(event.type)">
-                                                <span ng-if="event.selected" class="glyphicon glyphicon-star"></span>
-                                                <span ng-if="!event.selected" class="glyphicon glyphicon-star-empty"></span>
+                                                <span ng-if="event.selected" class="fas fa-star"></span>
+                                                <span ng-if="!event.selected" class="far fa-star"></span>
                                             </button>
 
                                         </div>
@@ -150,11 +151,11 @@
                                             <div ng-repeat="talk in event.papers" ng-show="!showFavorites || (showFavorites && talk.selected)">
                                                 <hr ng-if="$index > 0"/>
 
-                                                <a class="foo"  href="#" data-toggle="modal" data-target="#infoModal" ng-click="getInfo($event,talk, talk.icalStart)">{{talk.title}}</a>
+                                                <a class="foo"  href="#" data-bs-toggle="modal" data-bs-target="#infoModal" ng-click="getInfo($event,talk, talk.icalStart)">{{talk.title}}</a>
 
                                                 <button class="start btn btn-link btn-xs" ng-click="toggleFavoriteTalk(talk, talk.icalStart)">
-                                                    <span ng-if="talk.selected" class="glyphicon glyphicon-star"></span>
-                                                    <span ng-if="!talk.selected" class="glyphicon glyphicon-star-empty"></span>
+                                                    <span ng-if="talk.selected" class="fas fa-star"></span>
+                                                    <span ng-if="!talk.selected" class="far fa-star"></span>
                                                 </button>
 
                                             </div>
@@ -206,10 +207,12 @@
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
-<script src="js/jquery-2.2.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/angular.min.js"></script>
-<script src="js/data.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.1/iframeResizer.contentWindow.min.js" integrity="sha512-qw2bX9KUhi7HLuUloyRsvxRlWJvj0u0JWVegc5tf7qsw47T0pwXZIk1Kyc0utTH3NlrpHtLa4HYTVUyHBr9Ufg==" crossorigin="anonymous"></script><script src="js/data.js"></script>
 <script src="js/program.js"></script>
 
 </body>

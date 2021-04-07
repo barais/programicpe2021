@@ -235,12 +235,15 @@ modelsApp.controller("ProgramController", function($scope, $window) {
 
 });
 
-var y=0;
+var y=1;
 
 $('#infoModal').on('show.bs.modal', function (e) {
-    $('#infoModal').css('top', y);
+    $('#infoModal').css('top', y+'px');
 });
 
+$('#infoModal').on('hide.bs.modal', function (e) {
+    y = 1
+});
 
 function toITCFormat(date, time) {
     var timeCont = [],
@@ -263,3 +266,12 @@ function toITCFormat(date, time) {
 
 //var x = toITCFormat('2014/09/04', '02:30PM');
 //console.log(x); // this will output ur .ics format
+
+window.addEventListener('message', function(event) {
+    var messageContent = event.data.split(':');
+    var topOffset = messageContent[0];
+    var currentScroll = messageContent[1];
+    y = currentScroll
+    //calculate padding value and update the modal top-padding
+  
+  }, false);

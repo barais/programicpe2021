@@ -14,16 +14,15 @@ body {
 }
 
 
-
-
 /* Table style */
 
 .table-responsive {
     overflow-x: scroll;
 }
 
-.table {
 
+.table {
+    background-color: transparent;
 }
 
 .table tr {
@@ -36,6 +35,10 @@ body {
     color: white;
     text-align: center;
     vertical-align: middle !important;
+}
+
+.btn {
+    font-size: small!important;
 }
 
 .table td {
@@ -118,66 +121,66 @@ hr {
 }
 
 .TalkSession {
-    background-color: rgba(68, 255, 28, 0.5);
+    background-color: rgba(68, 255, 28, 0.5)!important;
 }
 
 .Panel {
-    background-color: rgba(255, 249, 40, 0.5);
+    background-color: rgba(255, 249, 40, 0.5)!important;
 }
 
 .Workshop {
-    background-color: rgba(255, 167, 45, 0.5);
+    background-color: rgba(255, 167, 45, 0.5)!important;
 }
 
 .Tutorial {
-    background-color: rgba(255, 46, 51, 0.5);
+    background-color: rgba(255, 46, 51, 0.5)!important;
 }
 
 .DoctoralSymposium {
-    background-color: rgba(119, 61, 255, 0.5);
+    background-color: rgba(119, 61, 255, 0.5)!important;
 }
 
 .EducatorSymposium {
-    background-color: rgba(119, 61, 255, 0.5);
+    background-color: rgba(119, 61, 255, 0.5)!important;
 }
 
 .Reception {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.5)!important;
     text-align: center;
 }
 
 .Lunch {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.5)!important;
     text-align: center;
 }
 
 .CoffeeBreak {
-    background-color: rgba(200, 200, 200, 0.5);
+    background-color: rgba(200, 200, 200, 0.5)!important;
     text-align: center;
 }
 
 .Clinic {
-    background-color: rgba(54, 255, 225, 0.5);
+    background-color: rgba(54, 255, 225, 0.5)!important;
 }
 
 .SRC {
-    background-color: rgba(174, 255, 35, 0.5);
+    background-color: rgba(174, 255, 35, 0.5)!important;
 }
 
 .Poster {
-    background-color: rgba(34, 180, 31, 0.5);
+    background-color: rgba(34, 180, 31, 0.5)!important;
 }
 
 .Keynote {
-    background-color: rgba(255, 13, 1, 0.5);
+    background-color: rgba(255, 13, 1, 0.5)!important;
 }
 
 .Meeting {
-    background-color: rgba(150, 150, 150, 0.5);
+    background-color: rgba(150, 150, 150, 0.5)!important;
 }
 
 .Opening {
-    background-color: rgba(41, 150, 180, 0.5);
+    background-color: rgba(41, 150, 180, 0.5)!important;
 }
 
 .table-responsive {
