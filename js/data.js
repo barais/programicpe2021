@@ -568,8 +568,8 @@ University of Washington Tacoma`,
 
 
 								],
-								title: "Context-tailored Workload Model Generation for Continuous Representative Load Testing",
-								type: "REGULAR",
+								title: "Multivariate Time Series Synthesis Using Generative Adversarial Networks",
+								type: "SHORT",
 
 							},
 
