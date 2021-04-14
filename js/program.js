@@ -146,7 +146,7 @@ modelsApp.controller("ProgramController", function ($scope, $window) {
     }
 
 
-    function createEvent(calendar, edate, start, end, title, description, location) {
+    function createEvent(calendar, edate, start, end, title, description, location, event1) {
         calendar.push("BEGIN:VEVENT");
         //        calendar.push("DTSTART;TZID=Europe/Paris:" + toITCFormat(edate,start));
         calendar.push("DTSTART:" + toITCFormat(edate, start));
@@ -156,7 +156,50 @@ modelsApp.controller("ProgramController", function ($scope, $window) {
         //        calendar.push("DTSTAMP;TZID=Europe/Paris:" + toITCFormat(edate,start));
         calendar.push("ORGANIZER;CN=icpe2021-gc@inria.fr:mailto:icpe2021-gc@inria.fr");
         calendar.push("UID:" + toITCFormat(edate, end) + "-" + hash(title) + "@icpe2021.irisa.fr");
-        calendar.push("DESCRIPTION:" + description); // TODO : max line is 75 characters
+
+       /* if (event1.papers != undefined) {
+            event1.papers.forEach(function (talk, talkIndex) {
+                console.log(talk);
+        });
+    }*/
+    
+    const regex = /\n/g;
+    let longdesc = '';
+    let shortdesc = '';
+    if (event1.description != undefined){
+        longdesc =  converter.makeHtml(event1.description);
+        shortdesc = event1.description
+    } else if (event1.program != undefined) {
+        longdesc =  converter.makeHtml(event1.program);
+        shortdesc = event1.program
+    } else if(event1.papers != undefined ){
+        /*papers: [{
+            authors: [{
+                    name: "Axel Busch",
+                },
+                {
+                    name: "Martin Kammerer",
+                },
+            ],
+            title: "Network Performance Influences of Software-defined Networks on Micro-service Architectures",
+            type: "REGULAR INDUSTRY",
+
+        },*/
+        event1.papers.forEach( (paper, talkIndex) => {
+            longdesc = longdesc + '<b>' + paper.title + '</b> - ' + paper.authors.map(a => a.name).join(', ') +  '. <i>' + paper.type + '</i>. <br>' ;
+            shortdesc = shortdesc + ' - ' + paper.title + ' - ' + paper.authors.map(a => a.name).join(', ') +  '. ' + paper.type + '\n' ;
+            
+        });
+
+    }else {
+        longdesc = description;
+        shortdesc = description;
+    }
+    
+
+        calendar.push("DESCRIPTION:" + shortdesc.replace(regex,'\n ').replace(/(.{75})/g, "$1\n ")); // TODO : max line is 75 characters
+        calendar.push("X-ALT-DESC;FMTTYPE=text/html:" + longdesc.replace(regex,'\n ').replace(/(.{75})/g, "$1\n\ ")); // TODO : max line is 75 characters
+        
         calendar.push("LOCATION:" + location);
         calendar.push("SUMMARY:" + title); // TODO : max line is 75 characters
         calendar.push("END:VEVENT");
@@ -178,13 +221,12 @@ modelsApp.controller("ProgramController", function ($scope, $window) {
                         if (typeof session.events !== "undefined") {
                             session.events.forEach(function (event, eventIndex) {
 
-                                if (typeof event.papers === "undefined") {
-
+                                
                                     if (!favoritesOnly || ((typeof event.selected !== "undefined") && event.selected === true)) {
-                                        createEvent(calendar, session.date, session.start, session.end, event.title, event.title, session.room); // TODO : description
+                                        createEvent(calendar, session.date, session.start, session.end, event.title, event.title, session.room,event); // TODO : description
                                     }
-                                } else {
-                                    event.papers.forEach(function (talk, talkIndex) {
+                                    /*if (typeof event.papers !== "undefined") {
+                                        event.papers.forEach(function (talk, talkIndex) {
                                         if (!favoritesOnly || ((typeof talk.selected !== "undefined") && talk.selected === true)) {
                                             if (talk.date == undefined || talk.start == undefined || talk.end == undefined) {
                                                 createEvent(calendar, session.date, session.start, session.end, talk.title, talk.title, session.room); // TODO : description
@@ -193,7 +235,7 @@ modelsApp.controller("ProgramController", function ($scope, $window) {
                                             }
                                         }
                                     });
-                                }
+                                }*/
 
 
                             });
