@@ -740,15 +740,49 @@ University of Washington Tacoma`,
 			[],
 			[],
 			[{
-					start: "19:30",
-					rowSpan: 1
+				start: "19:30",
+				rowSpan: 1
+			},
+			{
+				rowSpan: 1,
+	
+			}
+					],
+				[],
+				[],
+				[],
+				[],
+	
+			[{
+				start: "19:45",
+				rowSpan: 4
+			},
+			{
+				start: "19:45",
+				end: "21:00",
+				rowSpan: 3,
+				date: "2021/04/21",
+				room: "Zoom 1",
+				events: [{
+					type: "Meeting",
+					title: "ICPE Steering Commitee meeting",
+					description: `Please contact the ICPE 2021 chairs ([icpe2021@easychair.org](mailto:icpe2021@easychair.org)) if you would like to join this meeting`
+				}]
+			}
+		],
+		[],
+		[],
+		[],
+		[],
+		[{
+			start: "20:45",
+			rowSpan: 1
+		},
+		{
+			rowSpan: 1,
 
-				},
-				{
-					rowSpan: 1,
-
-				}
-			],
+		}
+				],
 			[],
 			[],
 			[],
@@ -1100,17 +1134,38 @@ University of Washington Tacoma`,
 			[],
 			[{
 					start: "19:30",
-					rowSpan: 1
+					rowSpan: 4
 				},
 				{
-					rowSpan: 1,
-
+					start: "19:30",
+					end: "21:00",
+					rowSpan: 3,
+					date: "2021/04/22",
+					room: "Zoom 1",
+					events: [{
+						type: "Reception",
+						title: "Virtual Social Event (Reception)",
+						organizers: [],
+					}]
 				}
 			],
 			[],
 			[],
 			[],
 			[],
+			[{
+				start: "21:00",
+				rowSpan: 1
+			},
+			{
+				rowSpan: 1,
+
+			}
+		],
+		[],
+		[],
+		[],
+		[],
 
 		]
 	},
