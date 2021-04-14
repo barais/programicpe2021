@@ -487,6 +487,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S1 - Testing, measurement and profiling",
+						sessionchairs: [
+							{
+								name: "Alberto Avritzer"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Xue Han",
@@ -636,6 +641,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S2 - WIP/Vision session",
+						sessionchairs: [
+							{
+								name: "Klaus Lange"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Norbert Schmitt",
@@ -813,6 +823,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S3 - Modeling and Optimization",
+						sessionchairs: [
+							{
+								name: "Murray Woodside"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Emilio Incerto",
@@ -972,6 +987,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S4 - Memory and Resource Management",
+						sessionchairs: [
+							{
+								name: "Andre Bondi"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Muhammed Unais P",
@@ -1135,6 +1155,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S5 - Service-based Systems",
+						sessionchairs: [
+							{
+								name: "Steffen Becker"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Axel Busch",
@@ -1234,6 +1259,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S6 - Benchmarking",
+						sessionchairs: [
+							{
+								name: "Catia Trubiani"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "André Bauer",
@@ -1359,6 +1389,11 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S7 - IoT, Embedded Systems, Cloud",
+						sessionchairs: [
+							{
+								name: "Marin Litoiu"
+							}
+						],
 						papers: [{
 								authors: [{
 										name: "Thomas Prantl",
