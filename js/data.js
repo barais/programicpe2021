@@ -619,7 +619,8 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
-						title: "Kaivalya Dixit Award Winner",
+						title: "Kaivalya Dixit Distinguish Dissertation Award Winner",
+						url: "https://www.spec.org/spec/awards/2021/dixitaward2020.html",
 						organizers: []
 					}]
 				}
@@ -979,7 +980,7 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
-						title: "SPEC & SPEC RG Presentation",
+						title: "Introduction to SPEC",
 					}]
 				}
 			],
@@ -1144,7 +1145,7 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Reception",
-						title: "Virtual Social Event (Reception)",
+						title: "Virtual Social Event & Awards Ceremony (Reception)",
 						organizers: [],
 					}]
 				}
