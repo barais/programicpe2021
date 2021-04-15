@@ -492,6 +492,7 @@ University of Washington Tacoma`,
 								name: "Alberto Avritzer"
 							}
 						],
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuIMx_3eYOTjKdZyHjqORgXu",
 						papers: [{
 								authors: [{
 										name: "Xue Han",
@@ -642,6 +643,7 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S2 - WIP/Vision session",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuK4kuorveM7RGPEw3hnppfv",
 						sessionchairs: [
 							{
 								name: "Klaus Lange"
@@ -858,6 +860,7 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S3 - Modeling and Optimization",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuLeZxvtIS1WF5ZzMI6sRtWL",
 						sessionchairs: [
 							{
 								name: "Murray Woodside"
@@ -1022,6 +1025,8 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S4 - Memory and Resource Management",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuK0ZfPpOIU5NR-u65OM39PX",
+
 						sessionchairs: [
 							{
 								name: "Andre Bondi"
@@ -1211,6 +1216,7 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S5 - Service-based Systems",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuLHf3Ra6htN9Fua4C4EJY5i",
 						sessionchairs: [
 							{
 								name: "Steffen Becker"
@@ -1315,6 +1321,7 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S6 - Benchmarking",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuJhuGXWiUdUccuHn9RJ38WY",
 						sessionchairs: [
 							{
 								name: "Catia Trubiani"
@@ -1445,6 +1452,8 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S7 - IoT, Embedded Systems, Cloud",
+						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuKiCr4w7RnKubFCU1kRZOFG",
+
 						sessionchairs: [
 							{
 								name: "Marin Litoiu"

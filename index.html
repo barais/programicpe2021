@@ -81,17 +81,20 @@
 
                         <!-- Homepage -->
                         <div ng-if="selectedTalk.speaker.homepage">
-                            <strong>Homepage:</strong> <a ng-href="{{selectedTalk.speaker.homepage}}">{{selectedTalk.speaker.homepage}}</a>
+                            <strong>Homepage:</strong> <a ng-href="{{selectedTalk.speaker.homepage}}" target="_blank">{{selectedTalk.speaker.homepage}}</a>
                         </div>
 
                         <!-- Website -->
                         <div ng-if="selectedTalk.url">
-                            <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}">{{selectedTalk.url}}</a>
+                            <strong>Website:</strong> <a ng-href="{{selectedTalk.url}}" target="_blank">{{selectedTalk.url}}</a>
                         </div>
 
                         <!-- Abstract -->
                         <div ng-if="selectedTalk.abstract" class="abstract">
                             <strong>Abstract:</strong> {{selectedTalk.abstract}}
+                        </div>
+                        <div ng-if="selectedTalk.playlist" class="abstract">
+                            <BR><strong>Youtube playlist:</strong> <a ng-href="{{selectedTalk.playlist}}" target="_blank">{{selectedTalk.playlist}}</a>
                         </div>
                         <div ng-if="selectedTalk.description" class="abstract">
                             <div ng-bind-html="convertHtml(selectedTalk.description) | unsafe"></div>
