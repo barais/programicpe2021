@@ -620,7 +620,7 @@ University of Washington Tacoma`,
 					room: "Zoom 1",
 					events: [{
 						type: "Opening",
-						title: "Kaivalya Dixit Distinguish Dissertation Award Winner",
+						title: "Kaivalya Dixit Distinguished Dissertation Award Winner",
 						url: "https://www.spec.org/spec/awards/2021/dixitaward2020.html",
 						organizers: []
 					}]
