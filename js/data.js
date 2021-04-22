@@ -48,7 +48,7 @@ var data = [{
 **A. Alnafessah 1, G. Casale** 1, **T. F. Düllmann** 2, **A. U. Gias 1**, **A. van Hoorn 2**, **M. Wurster 2**, **L. Zhu 1**
 - *1. Imperial College London, UK*
 - *2. University of Stuttgart, Germany*`,
-url: "https://icpe2021.spec.org/program/tutorials",
+						url: "https://icpe2021.spec.org/program/tutorials",
 					}]
 				},
 				{
@@ -368,10 +368,9 @@ University of Washington Tacoma`,
 			[],
 
 			[{
-					start: "20:00",
-					rowSpan: 1
-				}
-			],
+				start: "20:00",
+				rowSpan: 1
+			}],
 			[],
 			[],
 			[],
@@ -487,11 +486,9 @@ University of Washington Tacoma`,
 					events: [{
 						type: "TalkSession",
 						title: "S1 - Testing, measurement and profiling",
-						sessionchairs: [
-							{
-								name: "Alberto Avritzer"
-							}
-						],
+						sessionchairs: [{
+							name: "Alberto Avritzer"
+						}],
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuIMx_3eYOTjKdZyHjqORgXu",
 						papers: [{
 								authors: [{
@@ -644,11 +641,9 @@ University of Washington Tacoma`,
 						type: "TalkSession",
 						title: "S2 - WIP/Vision session",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuK4kuorveM7RGPEw3hnppfv",
-						sessionchairs: [
-							{
-								name: "Klaus Lange"
-							}
-						],
+						sessionchairs: [{
+							name: "Klaus Lange"
+						}],
 						papers: [{
 								authors: [{
 										name: "Norbert Schmitt",
@@ -743,49 +738,49 @@ University of Washington Tacoma`,
 			[],
 			[],
 			[{
-				start: "19:30",
-				rowSpan: 1
-			},
-			{
-				rowSpan: 1,
-	
-			}
-					],
-				[],
-				[],
-				[],
-				[],
-	
-			[{
-				start: "19:45",
-				rowSpan: 4
-			},
-			{
-				start: "19:45",
-				end: "21:00",
-				rowSpan: 3,
-				date: "2021/04/21",
-				room: "Zoom 1",
-				events: [{
-					type: "Meeting",
-					title: "ICPE Steering Commitee meeting",
-					description: `Please contact the ICPE 2021 chairs ([icpe2021@easychair.org](mailto:icpe2021@easychair.org)) if you would like to join this meeting`
-				}]
-			}
-		],
-		[],
-		[],
-		[],
-		[],
-		[{
-			start: "20:45",
-			rowSpan: 1
-		},
-		{
-			rowSpan: 1,
+					start: "19:30",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
 
-		}
-				],
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+
+			[{
+					start: "19:45",
+					rowSpan: 4
+				},
+				{
+					start: "19:45",
+					end: "21:00",
+					rowSpan: 3,
+					date: "2021/04/21",
+					room: "Zoom 1",
+					events: [{
+						type: "Meeting",
+						title: "ICPE Steering Commitee meeting",
+						description: `Please contact the ICPE 2021 chairs ([icpe2021@easychair.org](mailto:icpe2021@easychair.org)) if you would like to join this meeting`
+					}]
+				}
+			],
+			[],
+			[],
+			[],
+			[],
+			[{
+					start: "20:45",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
+
+				}
+			],
 			[],
 			[],
 			[],
@@ -798,8 +793,12 @@ University of Washington Tacoma`,
 	{
 		name: "Thursday - April 22, 2021",
 		rooms: [{
-			name: "Zoom room 1"
-		}],
+				name: "Zoom room 1"
+			},
+			{
+				name: "Zoom room 2"
+			}
+		],
 		sessionGroups: [
 			[{
 					start: "16:00",
@@ -861,11 +860,9 @@ University of Washington Tacoma`,
 						type: "TalkSession",
 						title: "S3 - Modeling and Optimization",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuLeZxvtIS1WF5ZzMI6sRtWL",
-						sessionchairs: [
-							{
-								name: "Murray Woodside"
-							}
-						],
+						sessionchairs: [{
+							name: "Murray Woodside"
+						}],
 						papers: [{
 								authors: [{
 										name: "Emilio Incerto",
@@ -965,7 +962,31 @@ University of Washington Tacoma`,
 							},
 						],
 					}]
-				}
+				},
+				{
+					start: "17:00",
+					end: "18:30",
+					rowSpan: 16,
+					date: "2021/04/22",
+					room: "Zoom 2",
+					events: [{
+						type: "Tutorial",
+						title: "SPEC Java, runtimes and open source benchmarks",
+						sessionchairs: [{
+							name: "Anil Kumar, AMD"
+						}],
+						description: `
+**Agenda**: Discussing updates to SPECjbb2015, SPECjvm2008, evaluating open source benchmarks and emerging use cases
+
+Zoom is set up:
+- Time: Apr 22, 2021 08:00 AM Pacific Time (US and Canada)
+- Zoom Meeting details:  [https://spec.zoom.us/j/99026791494?pwd=cTZGK3N6RGhpd3NpU0pPSjhWeDRpZz09](https://spec.zoom.us/j/99026791494?pwd=cTZGK3N6RGhpd3NpU0pPSjhWeDRpZz09)
+- Meeting ID: 990 2679 1494
+- Passcode: 295135
+`
+					}]
+				},
+
 			],
 			[],
 			[],
@@ -1027,11 +1048,9 @@ University of Washington Tacoma`,
 						title: "S4 - Memory and Resource Management",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuK0ZfPpOIU5NR-u65OM39PX",
 
-						sessionchairs: [
-							{
-								name: "Andre Bondi"
-							}
-						],
+						sessionchairs: [{
+							name: "Andre Bondi"
+						}],
 						papers: [{
 								authors: [{
 										name: "Muhammed Unais P",
@@ -1160,18 +1179,18 @@ University of Washington Tacoma`,
 			[],
 			[],
 			[{
-				start: "21:00",
-				rowSpan: 1
-			},
-			{
-				rowSpan: 1,
+					start: "21:00",
+					rowSpan: 1
+				},
+				{
+					rowSpan: 1,
 
-			}
-		],
-		[],
-		[],
-		[],
-		[],
+				}
+			],
+			[],
+			[],
+			[],
+			[],
 
 		]
 	},
@@ -1217,11 +1236,9 @@ University of Washington Tacoma`,
 						type: "TalkSession",
 						title: "S5 - Service-based Systems",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuLHf3Ra6htN9Fua4C4EJY5i",
-						sessionchairs: [
-							{
-								name: "Steffen Becker"
-							}
-						],
+						sessionchairs: [{
+							name: "Steffen Becker"
+						}],
 						papers: [{
 								authors: [{
 										name: "Axel Busch",
@@ -1322,11 +1339,9 @@ University of Washington Tacoma`,
 						type: "TalkSession",
 						title: "S6 - Benchmarking",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuJhuGXWiUdUccuHn9RJ38WY",
-						sessionchairs: [
-							{
-								name: "Catia Trubiani"
-							}
-						],
+						sessionchairs: [{
+							name: "Catia Trubiani"
+						}],
 						papers: [{
 								authors: [{
 										name: "André Bauer",
@@ -1454,11 +1469,9 @@ University of Washington Tacoma`,
 						title: "S7 - IoT, Embedded Systems, Cloud",
 						playlist: "https://www.youtube.com/playlist?list=PL2cndmqBoWuKiCr4w7RnKubFCU1kRZOFG",
 
-						sessionchairs: [
-							{
-								name: "Marin Litoiu"
-							}
-						],
+						sessionchairs: [{
+							name: "Marin Litoiu"
+						}],
 						papers: [{
 								authors: [{
 										name: "Thomas Prantl",
